@@ -1,0 +1,45 @@
+Machine Learning Logbook - Traffic Prediction
+
+1. EDA (Exploratory Data Analysis)
+
+The correlation between numeric features is depicted in the heatmap below.
+
+(Task required)
+
+1. Open up TrafficPredictionAnomaly_Tutorial.ipynb.
+2. Run the cell under Your Turn: Add at least one more EDA plot.
+3. Save the image that is produced for the heatmap image under eda_plot.png in this current folder.
+
+!EDA Plot
+
+2. Model Comparison Results
+
+Below you will see the evaluation of different machine learning algorithms against each other in terms of MAE, RMSE, R, and MAPE.
+
+(Task required)
+
+1. Run the cells needed to train all of the different models.
+2. Run the Model Evaluation & Comparison cell.
+3. Take a screenshot or save the results table shown as results_table.png.
+
+!Results Table
+
+3. Anomaly Detection
+
+Actual vs predicted traffic volume, with anomalies denoted(95th percentile threshold used).
+
+(Task required)
+
+1. Run the cells needed for predictions for anomaly detection.
+2. Run the Visualize Anomalies cell to view the graph of "Actual vs Predicted".
+3. Save the graph as anomaly_graph.png.
+
+!Anomaly Graph
+
+Conclusion
+
+I have the notebook setup to now produce these items:
+
+- Correlation Heatmap: Added in the EDA section
+- New regression models: Added: RandomForest, SVR, KNN and Polynomial Regression.
+- New Metrics: Added RMSE, R and MAPE in the evaluation table
