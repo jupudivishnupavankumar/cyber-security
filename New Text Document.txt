@@ -1,0 +1,16 @@
+Task 1:Implement the GAN to generate the deepfake images by using following sample code:
+DeepFakeGeneration.ipynbDownload DeepFakeGeneration.ipynb
+Task 2 (Optional): Implement the same using the above code to generate the images of the faces by using the sample real data:
+CelebFaces Attributes (CelebA) DatasetLinks to an external site.
+
+Lab Logbook Requirements: You are required to paste a screenshot of GAN training result at some particular epoch in your logbook. The screenshot must contain the generated digital images, the epoch number and the total time taken to train for that epoch. 
+
+You are required to paste a screenshot of GAN training result at some particular epoch in your logbook. The screenshot must contain the generated digital images, the epoch number and the total time taken to train for that epoch.##
+
+##The required epoch number can be found using the method below:## 
+
+##Take the last two digits of your SID. If the two-digit number is 50 or less then use that as the required epoch number. If it is more than 50, then divide the two digits by 50 and if the number has decimal digits, round it up. If the two digits do not have any decimal digits then keep them as they are. For example, if your SID is2449129 then the last two digits are 29. Since 29<50 divide it by 50, then you will get 1.33 which will be rounded up to 2 as the desired epoch number.
+
+##My name and SID is## 
+##Student Name: jvishnu pavan kumar## 
+##SID: 2449129##
