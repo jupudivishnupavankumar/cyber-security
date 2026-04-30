@@ -1,0 +1,44 @@
+Lab Tutorial: Cyberattack Case Study and Mitigation Strategies
+Objective: Analyze a recent cyberattack, identify the cause, and propose prevention methods.
+
+Lab Summary:
+In this lab session, you will delve into a case study of a recent cyberattack. You will select a cyberattack of your choice from the provided list and identify its origins, exploited weaknesses, and prevention measures.
+You must officially record your information within this document instead of solely obtaining data from a web server. Make sure this document is in your weekly code folder.
+Lab Instructions:
+
+Step 1: Choose Your Attack
+Each student will pick one cyberattack from the following list:
+SolarWinds Supply Chain Attack (2020) - Attackers embed a backdoor in SolarWinds' Orion software, affecting thousands of organizations.
+Colonial Pipeline Ransomware Attack (2021) - A ransomware attack disrupts fuel supplies along the Eastern United States coastline.
+Log4j Vulnerability Exploit (2021) - A critical flaw in Log4j enables remote code execution across numerous systems.
+Twitter Bitcoin Scam (2020) - Hackers compromise high-profile Twitter accounts and promote a Bitcoin scam.
+Uber Data Breach (2022) - Social engineering is used to gain unauthorized access to Uber's internal systems.
+T-Mobile Data Breach (2023) - API vulnerabilities are exploited by attackers to steal customer data.
+CrowdStrike IT Outages (2024) - In March 2024, after a stress test, CrowdStrike releases Rapid Response Content for Channel File 291. Updates in April 2024 result in IT outages for some users, prompting investigations and explanations from the company.
+Microsoft Exchange Server Hack (2021) - State-sponsored attackers exploit Microsoft Exchange server vulnerabilities.
+MOVEit File Transfer Hack (2023) - A zero-day vulnerability in the MOVEit file transfer software is exploited to steal data.
+WannaCry Ransomware Attack (2017) - A global ransomware attack exploits a Microsoft Windows vulnerability, affecting thousands of organizations worldwide, including the UK's NHS.
+Zoom Security Issues (2020) - Amid the rise of remote work, cybercriminals exploit vulnerabilities in Zoom's video conferencing software, leading to "Zoombombing" incidents and privacy concerns related to encryption.
+23andMe data breach (2022) - Unauthorized access is gained to the personal data of some genetic testing company users.
+Kaseya VSA Ransomware Attack (2021) - Attackers target the Kaseya VSA platform, used by managed service providers, and infect their clients with ransomware, affecting hundreds of businesses and organizations globally.
+
+Step 2: Research the Attack
+Describe how the attack occurred and identify the specific vulnerabilities or weaknesses exploited.
+If known, identify the attackers, including whether they were a nation-state, criminal organization, or individual hackers.
+Discuss the financial, operational, and reputational impact of the attack.
+Explain how the attack was discovered by organizations or security researchers.
+
+Step 3: Determine the Cause and Mitigation
+Explain why the attack was successful and identify any security gaps, misconfigurations, or lack of updates.
+Suggest methods and solutions to prevent similar attacks in the future.
+Outline the security controls that should be implemented to prevent future attacks, such as network monitoring, incident response plans, and user awareness training.
+
+Step 4: Collaborate with a Peer
+Share your findings with at least one other student and discuss your results.
+
+Lab Logbook Requirements:
+Record the following information in your lab logbook:
+The type of attack you have chosen.
+A link to one key website or research paper that you found useful.
+
+Optional Activity: You may analyze more than one type of attack.

@@ -1,0 +1,68 @@
+# Case Study: MOVEit File Transfer Hack (2023)
+
+**Date**: January 30, 2026  
+**Subject**: Cyber Security Lab - Week 2
+
+---
+
+## 1. Introduction
+
+The MOVEit File Transfer hack, which unfolded in May 2023, was a massive cyberattack exploiting a zero-day vulnerability in Progress Software's MOVEit Transfer, a popular managed file transfer (MFT) solution used by thousands of organizations to securely transfer sensitive data.
+
+## 2. Research the Attack
+
+### How did the attack happen?
+
+The attack exploited a critical **SQL Injection (SQLi)** vulnerability (CVE-2023-34362) in the MOVEit Transfer web application.
+
+- **Vulnerability**: The flaw allowed unauthenticated attackers to inject malicious SQL commands into the database.
+- **Web Shell**: Attackers used this access to drop a webshell named `human2.aspx` (and others) onto the target servers.
+- **Exfiltration**: This webshell provided a backdoor, allowing the attackers to list files, download sensitive data, and execute administrative commands.
+- **Automation**: The attack was highly automated, hitting a vast number of victims in a very short window (primarily over the Memorial Day weekend in the US).
+
+### Who were the attackers?
+
+The attack was attributed to the **CL0P Ransomware Gang** (also known as TA505 or FIN11).
+
+- This Russian-speaking cybercriminal group is known for targeting File Transfer Appliances (FTAs).
+- Unlike traditional ransomware attacks that encrypt data, CL0P focused on **data theft and extortion** (double extortion without encryption), threatening to publish stolen data on their "LEAKS" Tor site if a ransom was not paid.
+
+### What was the impact?
+
+The impact was widespread and severe, affecting over **2,000 organizations** and exposing the personal data of more than **60 million individuals** (estimates vary, but the scale was massive).
+
+- **Organizations Affected**: Government agencies (e.g., US Department of Energy, Louisiana OMV), educational institutions, financial services, and major corporations like British Airways, BBC, and Zellis.
+- **Financial Damage**: Costs related to incident response, legal fees, credit monitoring, and potential regulatory fines are estimated to reach billions of dollars globally.
+- **Reputational Damage**: Depending on the organization, the breach of trust was significant, especially for those serving as third-party vendors (e.g., payroll providers like Zellis) whose compromise cascaded to their clients.
+
+### How was it discovered?
+
+The attack was discovered when organizations noticed anomalous network traffic and unexpected file transfers. Progress Software (the vendor) identified the vulnerability and issued an advisory on May 31, 2023. Security firms like Mandiant and Rapid7 quickly analyzed the `human2.aspx` webshell and the exploit chain.
+
+## 3. Cause and Mitigation
+
+### Why did the attack succeed?
+
+1.  **Zero-Day Exploit**: The vulnerability was unknown to the vendor and defenders at the time of the attack, meaning no patches were available ("zero days" to fix it).
+2.  **Internet Exposure**: MOVEit instances were designed to be internet-facing to facilitate file transfers, making them accessible targets.
+3.  **Dependency**: Many organizations relied on a single software solution for critical data transfer, creating a single point of failure.
+
+### How could it have been prevented?
+
+- **Input Validation**: Rigorous code review and input sanitization during software development could have prevented the SQL injection flaw.
+- **WAF Rules**: A properly configured Web Application Firewall (WAF) might have detected and blocked the SQL injection attempts, although zero-days are notoriously hard to catch without specific signatures.
+- **Defense in Depth**: Relying not just on the software's security but also on network monitoring to detect the webshell creation or massive data outflow.
+
+### Mitigation Strategies
+
+To prevent similar attacks, organizations should:
+
+1.  **Patch Management**: Apply security updates immediately. Progress Software released patches swiftly after discovery.
+2.  **Limit Internet Exposure**: Restrict access to MFT administrative interfaces. Use firewalls or allow-lists to permit only trusted IP addresses.
+3.  **Threat Hunting**: Actively search for Indicators of Compromise (IoCs), such as the `human2.aspx` file or unexpected user accounts created by the attackers.
+4.  **Database Security**: Ensure the database user used by the application has the principle of least privilege (e.g., it shouldn't be able to drop tables or execute system commands if not necessary).
+
+## 4. Lab Logbook Entry
+
+- **Attack Type**: MOVEit File Transfer Hack (2023) / SQL Injection
+- **Key Source**: [CISA Cybersecurity Advisory AA23-158a](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a)

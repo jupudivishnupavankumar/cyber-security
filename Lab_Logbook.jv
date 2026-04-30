@@ -1,9 +1,9 @@
-1. DataFrame: Used to contain and operate upon the entire cybersecurity dataset as a table with row and column labels.
+# Lab Logbook - Week 2
 
-2. Series: A single column in the dataset (such as 'Attack Type' and 'Timestamp') can be viewed as a one-dimensional labeled array which permits convenient access and manipulation.
+## Attack Type
 
-3. Resampler: Returned by the resample() method. Used for managing time-series data where groups were collected into monthly chunks for attack trends analysis.
+MOVEit File Transfer Hack (2023)
 
-4. DataFrameGroupBy: Returned by the groupby() method. Split the dataset into 'Year' and 'Attack Type' for aggregate analysis and summarization.
+## Key Source
 
-5. RangeIndex: The default immutable integer index to the DataFrame that allows access to the 40,000 attacks using an integer position 0-39,999.
+[CISA Cybersecurity Advisory AA23-158a](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a)
