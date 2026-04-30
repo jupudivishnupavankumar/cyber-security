@@ -1,16 +1,16 @@
-Task 1:Implement the GAN to generate the deepfake images by using following sample code:
-DeepFakeGeneration.ipynbDownload DeepFakeGeneration.ipynb
-Task 2 (Optional): Implement the same using the above code to generate the images of the faces by using the sample real data:
-CelebFaces Attributes (CelebA) DatasetLinks to an external site.
+Using the code you just looked at as a guide, try writing your own code to build some other machine learning or neural network algorithms from the list below.
 
-Lab Logbook Requirements: You are required to paste a screenshot of GAN training result at some particular epoch in your logbook. The screenshot must contain the generated digital images, the epoch number and the total time taken to train for that epoch. 
+Here are some machine learning algorithms you could try:
+Decision Tree Classifier: https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
+K-Nearest Neighbors (KNN): https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
+Logistic Regression: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+Naive Bayes Classifier: https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html
 
-You are required to paste a screenshot of GAN training result at some particular epoch in your logbook. The screenshot must contain the generated digital images, the epoch number and the total time taken to train for that epoch.##
+And here are some deep learning models:
+Long Short-Term Memory (LSTM): https://keras.io/api/layers/recurrent_layers/lstm/
+Convolutional Neural Networks (CNN): https://keras.io/api/layers/convolution_layers/convolution1d/
+Transformers (Hugging Face Transformers)
 
-##The required epoch number can be found using the method below:## 
-
-##Take the last two digits of your SID. If the two-digit number is 50 or less then use that as the required epoch number. If it is more than 50, then divide the two digits by 50 and if the number has decimal digits, round it up. If the two digits do not have any decimal digits then keep them as they are. For example, if your SID is2449129 then the last two digits are 29. Since 29<50 divide it by 50, then you will get 1.33 which will be rounded up to 2 as the desired epoch number.
-
-##My name and SID is## 
-##Student Name: jvishnu pavan kumar## 
-##SID: 2449129##
+For your lab logbook, you'll need to remember a few things:
+If this is your first lab, you should include a plot that compares the accuracy, precision, and recall for all your AI models.
+Also, make sure you don't add any extra code or other information to the logbook. Only include what's absolutely necessary. If we find anything else in there, or if you don't follow these instructions carefully, you won't get marks.
