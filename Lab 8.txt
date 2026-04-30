@@ -1,0 +1,50 @@
+Objectives of the lab
+1. Understand the basic concepts and operations involved in RSA and Diffie-Hellman algorithms.
+2. Manually calculate the key exchange and cipher of RSA and Diffie-Hellman algorithms.
+3. Understand how to implement RSA encryption and decryption in Python.
+4. Understand how to simulate Diffie-Hellman key exchange in Python.
+5. Understand the fundamental aspects of the security of RSA and Diffie-Hellman algorithms.
+
+Activity 1: Understand RSA step-by-step
+Objective: Manually implement RSA key generation, encryption, and decryption using small primes. Use the lecture slides from the previous week as a guide for this step-by-step process.
+
+Task 1: RSA key generation (manual calculation)
+1. Select two small prime numbers, p and q.
+2. Calculate n = p * q.
+3. Calculate phi(n) = (p - 1) * (q - 1).
+4. Select a small public exponent, e.
+5. Calculate d = e^-1 mod phi(n). This will be the private key. This involves finding the modular inverse of e.
+6. The public key is (e, n) and the private key is (d, n).
+
+Task 2: RSA encrypt message (manual calculation)
+1. Select a small message M (represented numerically, e.g., M = 5).
+2. Cipher C = M^e mod n.
+
+Task 3: RSA decrypt message (manual calculation)
+1. Message is C = M^d mod n.
+
+Activity 2: Understand Diffie-Hellman key exchange
+Objective: Manually simulate Diffie-Hellman key exchange by performing group pairing.
+
+Work in pairs (choose any partner). Do not sit with your partner; communicate using Microsoft Teams or another online messenger.
+1. Pairing and Communication: Choose a partner to work with. Do not sit next to them, and use Microsoft Teams or another online messenger for communication.
+
+2. Choosing Public Key and Value: Using Microsoft Teams or another online messenger, agree on two public numbers, p and g (where p is a prime number. Ideally, g should be a primitive root modulo p, but for simulation purposes, any number will suffice).
+
+3. Choosing Private Key: Each student must choose one secret number independently. For example, let's say Student 1 chooses 'a' and Student 2 chooses 'b'. You do not need to reveal your secret key to anyone, including your partner.
+
+4. Computing Public Key: Student 1: A = g^a mod p. Student 2: B = g^b mod p.
+
+5. Exchanging Public Keys: Share your public keys with your partner using Microsoft Teams or another online messenger. Do not reveal your secret keys at any stage!
+
+6. Computing Shared Secret Key: Student 1: S = B^a mod p. Student 2: S = A^b mod p.
+
+7. Verification: Compare your secret keys. Both students should arrive at the same S; if not, recalculate to correct it.
+
+LOG BOOK REQUIREMENT: Document the following in your lab logbook:
+1. Partner's Name
+2. P, g, S, and your private key (your partner's private key is optional)
+
+Optional Challenge (group work):
+Collaborate with a partner to simulate a hybrid encryption system. This system will use Diffie-Hellman key exchange to securely exchange a symmetric key and then use AES to encrypt the message. This is how real-world systems operate.
+Share your message with your partner using your private key D, and then your partner should be able to decrypt it using their shared key S.
