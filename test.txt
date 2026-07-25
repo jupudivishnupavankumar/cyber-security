@@ -1,5 +1,0 @@
-Lab Logbook requirements: Ensure the following points are covered within your Lablogbook:
-
-A graph that represents how accurate the model is for every epsilon value.
-
-The accuracy of the model before and after data poisoning.
